@@ -1,0 +1,146 @@
+:root {
+    --black: #23053A;
+    --blue: #EFF1FF;
+    --gray: #8E9AAF;
+    --pink-dark: #CBC0D3;
+    --pink-light: #FEEAFA;
+    --purple: #4A4E69;
+    --white: #FFFFFF;
+
+    font-size: 62.5%; /*10px*/
+
+    --open-sans: 'Open Sans', sans-serif;
+    --palanquin: 'Palanquin', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --staatliches: 'Staatliches', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+header {
+    align-items: center;
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+header img {
+    animation: header 3s;
+    transition: 0.5s;
+}
+
+header img:hover {
+    cursor: pointer;
+    scale: 1.2;
+}
+
+header p {
+    display: none;
+}
+
+h1 {
+    animation: header 4s;
+    background-color: var(--pink-dark);
+    color: var(--white);
+    font-family: var(--staatliches);
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+h1:hover {
+    color: mediumpurple;
+    cursor: pointer;
+}
+
+main {
+ background-color: var(--blue);
+}
+
+main p {
+    background-color: var(--blue);
+    color: var(--black);
+    font-family: var(--palanquin);
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding: 2rem 0 4rem;
+}
+
+.card {
+    animation: card 6s;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 320px;
+    padding: 0 2rem 4rem;
+    position: relative;
+}
+
+.card span {
+    background-color: var(--pink-light);
+    border-radius: 20px;
+    color: var(--purple);
+    font-family: var(--staatliches);
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    line-height: 3.4rem;
+    padding: 1px 24px;
+    position: absolute;
+    right: 3rem; /* o right é 1rem, porém com o padding do .card foi necessária a correção */
+    top: 1rem;
+}
+
+footer,
+.desktop {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: var(--pink-dark);
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: mediumpurple;
+}
+
+@keyframes header {
+    from {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    
+@keyframes card {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

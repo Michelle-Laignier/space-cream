@@ -1,0 +1,141 @@
+@media screen and (min-width:1024px) {
+    body {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        max-height: 100vh;
+        position: relative; /* pra alinhar o footer com absolute */
+    }
+
+    header {
+        animation: header 4s;
+        padding: 2rem 0 0;
+    }
+
+    header p {
+        color: var(--white);
+        display: inline;
+        font-family: var(--roboto);
+        font-size: 1.5rem;
+    }
+
+    main {
+        background-color: var(--white);
+        display: grid;
+        justify-content: center;
+        max-height: 100vh;
+    }
+
+    main p {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        animation: card 4s;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 17% 20% 17%;
+        gap: 2rem;
+        justify-items: center;
+        margin-top: 4rem;
+    }
+
+    .desktop img {
+        border-radius: 20px;
+        cursor: pointer;
+        object-fit: cover;
+        transition: 0.5s;
+        width: 220px;
+    }
+
+    .spoon {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+    }
+
+    .ice-cream {
+        grid-column-start: 3;
+    }
+
+    .img-small {
+        height: 150px;
+        transition: all 0.5s;
+    }
+
+    .img-small:hover {
+        transform: scale(1.1) rotate3d(1, 1, 1, -10deg);
+        filter: drop-shadow(2px 4px 9px purple);
+    }
+
+    .img-big {
+        height: 350px;
+        transition: all 0.5s;
+    }
+
+    .img-big:hover {
+        transform: scale(1.1) rotate3d(1, 1, 1, 10deg);
+        filter: drop-shadow(2px 4px 9px purple);
+    }
+
+    footer {
+        animation: footer 4s;
+        bottom: 0;
+        color: var(--purple);
+        display: inline;
+        font-family: var(--open-sans);
+        font-size: 1.4rem;
+        grid-column-start: 2;
+        margin-bottom: 3rem;
+        position: absolute;
+        width: 100%;
+    }
+
+    footer a {
+        color: var(--purple);
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        color: mediumpurple;
+        text-decoration: underline;
+    }
+
+    @keyframes header {
+        from {
+            opacity: 0;
+            transform: translateX(-80px);
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes card {
+        from {
+            opacity: 0;
+            transform: translateX(80px);
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes footer {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+}
