@@ -10,10 +10,13 @@ Projeto feito para recriar um site a partir de um layout do Figma, pra treinar c
 ## Layout
 Você pode visualizar os layouts do projeto através desses links:
 <br>
-[Mobile] (<https://www.figma.com/file/drBBktNRdtCIUiN4cZk4yo/Stage-03---Mobile-First/duplicate>).
+
+[Mobile](<https://www.figma.com/file/drBBktNRdtCIUiN4cZk4yo/Stage-03---Mobile-First/duplicate>).
 <br>
-[Desktop] (<https://www.figma.com/file/pddZCuQIRLjk5dEHQ4L4YR/Stage-03---Grid-com-anima%C3%A7%C3%B5es/duplicate>)
+
+[Desktop](<https://www.figma.com/file/pddZCuQIRLjk5dEHQ4L4YR/Stage-03---Grid-com-anima%C3%A7%C3%B5es/duplicate>)
 <br>
+
 É necessário ter uma conta no [Figma](https://www.figma.com).
 <br>
 
